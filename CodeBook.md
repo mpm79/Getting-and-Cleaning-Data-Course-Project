@@ -5,7 +5,7 @@ From the dataset README file:
 
 "The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz."
 
-The training and test sets were merged to create one dataset. For each record, 561 features were measured. Measurements for the 66 mean and standard deviation variables were retained in the tidy dataset created in run_analysis.R. 
+The training and test sets were merged to create one dataset. For each record, 561 features were measured. Measurements for the 66 mean and standard deviation variables were retained to create the tidy dataset in run_analysis.R. 
 
 "tBodyAcc.mean...X"           "tBodyAcc.mean...Y"           "tBodyAcc.mean...Z"          
 "tBodyAcc.std...X"            "tBodyAcc.std...Y"            "tBodyAcc.std...Z"           
@@ -35,7 +35,7 @@ The four variables in the final dataset are:
 1) subject: identifies the subject, 1-30
 2) activity: activity associated with the measurement (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 3) variable: variable being measured
-4) value: the value of the measurement
+4) value: mean value of the variable by subject and activity
 
 The records in the dataset have been sorted, first by subject and then by activity, in the final dataset.
 
