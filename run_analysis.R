@@ -26,3 +26,6 @@ har_data<-melt(har_data,id=1:2)
 har_data2<-dcast(har_data,subject + activity ~ variable,mean)
 har_data2<-melt(har_data2,id=1:2)
 har_data2<-har_data2[order(har_data2$subject,har_data2$activity),]
+
+# har_data2 is the final tidy dataset
+
